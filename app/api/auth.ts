@@ -66,7 +66,7 @@ export function auth(req: NextRequest) {
         `${serverConfig.isAzure ? "" : "Bearer "}${serverApiKey}`,
       );
     } else {
-      console.log("[Auth] admin did not provide an api key");
+      // console.log("[Auth] admin did not provide an api key");
     }
   } else {
     console.log("[Auth] use user api key");
